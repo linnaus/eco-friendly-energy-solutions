@@ -4,95 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biogas Ghana</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #2e7d32; color: white; padding: 20px; text-align: center; }
-    nav { background: #388e3c; padding: 10px; text-align: center; }
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #fafafa; }
+    header { 
+      background: url('images/banner.jpg') center/cover no-repeat; 
+      color: white; 
+      padding: 80px 20px; 
+      text-align: center; 
+    }
+    header h1 { font-size: 2.8em; margin: 0; text-shadow: 2px 2px 6px rgba(0,0,0,0.5); }
+    header p { font-size: 1.3em; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); }
+    nav { background: #2e7d32; padding: 12px; text-align: center; position: sticky; top: 0; z-index: 1000; }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
-    section { padding: 20px; max-width: 900px; margin: auto; }
-    footer { background: #2e7d32; color: white; text-align: center; padding: 10px; margin-top: 20px; }
-    .card { background: #f1f8e9; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    h2 { color: #2e7d32; margin-bottom: 15px; }
+    .card { background: #fff; padding: 20px; margin: 15px 0; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
+    .card img { max-width: 100%; border-radius: 6px; margin-top: 10px; }
     #calculator { background: #f9fbe7; border: 1px solid #c5e1a5; padding: 20px; border-radius: 8px; margin: 20px 0; }
     #calculator input, #calculator select, #calculator button {
-      margin: 10px 0; padding: 8px; font-size: 16px;
+      margin: 10px 0; padding: 10px; font-size: 16px; width: 100%; max-width: 400px; display: block;
     }
     #calculator button {
       background: #388e3c; color: white; border: none; border-radius: 5px; cursor: pointer;
     }
     #calculator button:hover { background: #2e7d32; }
-    iframe { max-width: 100%; border-radius: 8px; }
+    iframe { max-width: 100%; border-radius: 8px; margin-top: 10px; }
+    footer { background: #2e7d32; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    footer a { color: white; margin: 0 8px; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer i { margin: 0 5px; }
   </style>
 </head>
 <body>
+  <!-- Hero Banner -->
   <header>
-    <h1>eco friendly energy solutions</h1>
-    <p>Turning waste into clean energy</p>
+    <h1>Biogas Ghana</h1>
+    <p>Turning Waste into Clean Energy for a Sustainable Future</p>
   </header>
 
+  <!-- Navigation -->
   <nav>
-    <a href="#about">About</a>
-    <a href="#guide">Build Guide</a>
-    <a href="#tutorials">Tutorials</a>
-    <a href="#resources">Resources</a>
-    <a href="#faq">FAQs</a>
-    <a href="#calculator">Calculator</a>
-    <a href="#contact">Contact</a>
+    <a href="#about"><i class="fa-solid fa-seedling"></i> About</a>
+    <a href="#guide"><i class="fa-solid fa-tools"></i> Build Guide</a>
+    <a href="#tutorials"><i class="fa-solid fa-video"></i> Tutorials</a>
+    <a href="#resources"><i class="fa-solid fa-book"></i> Resources</a>
+    <a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQs</a>
+    <a href="#calculator"><i class="fa-solid fa-calculator"></i> Calculator</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
   </nav>
 
   <!-- About Section -->
   <section id="about">
-    <h2>About Biogas</h2>
+    <h2><i class="fa-solid fa-seedling"></i> About Biogas</h2>
     <p>
       Biogas is a renewable energy source produced through anaerobic digestion of organic waste like cow dung (CD) and kitchen waste (KW).
       It provides affordable cooking gas, reduces greenhouse emissions, and produces bio-slurry for fertilizer.
     </p>
-    <img src="images/biogas_intro.jpg" alt="Biogas overview" width="500">
+    <img src="images/biogas_intro.jpg" alt="Biogas overview">
   </section>
 
   <!-- Build Guide -->
   <section id="guide">
-    <h2>How to Build a Simple Digester</h2>
+    <h2><i class="fa-solid fa-tools"></i> How to Build a Simple Digester</h2>
     <div class="card">
       <h3>Step 1: Gather Materials</h3>
       <p>25L plastic gallon, PVC pipes, tyre tube, gas valve, glue gun, silicon seal, epoxy, cow dung, kitchen waste, and water.</p>
-      <img src="images/materials.jpg" alt="Materials" width="400">
+      <img src="images/materials.jpg" alt="Materials">
     </div>
     <div class="card">
       <h3>Step 2: Prepare Feedstock</h3>
       <p>Chop kitchen waste, mix with cow dung in ratios (1:1, 1:2, 1:3), dilute with water to form slurry.</p>
-      <img src="images/feedstock.jpg" alt="Preparing feedstock" width="400">
+      <img src="images/feedstock.jpg" alt="Preparing feedstock">
     </div>
     <div class="card">
       <h3>Step 3: Assemble Digester</h3>
       <p>Fix gas outlet hose to tyre tube for storage. Seal joints tightly with glue/epoxy. Provide a slurry outlet pipe.</p>
-      <img src="images/digester_setup.jpg" alt="Digester setup" width="400">
+      <img src="images/digester_setup.jpg" alt="Digester setup">
     </div>
     <div class="card">
       <h3>Step 4: Collect & Use Gas</h3>
       <p>Store at ambient temperature (24–30°C). Measure gas with water displacement or tube expansion. Use safely for cooking or heating.</p>
-      <img src="images/gas_collection.jpg" alt="Gas collection" width="400">
+      <img src="images/gas_collection.jpg" alt="Gas collection">
     </div>
   </section>
 
   <!-- Tutorials -->
   <section id="tutorials">
-    <h2>Video Tutorials</h2>
+    <h2><i class="fa-solid fa-video"></i> Video Tutorials</h2>
     <p>Step-by-step guides to help you build and operate your biogas digester:</p>
 
     <div class="card">
       <h3>1. Preparing Feedstock</h3>
       <iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/k8UMRhrj-TQ" 
-  title="Sample Biogas Video" frameborder="0" allowfullscreen></iframe>
-
-      
+        src="https://www.youtube.com/embed/HxjYB_0z6Dk" 
+        title="Preparing feedstock for biogas" 
+        frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="card">
       <h3>2. Digester Assembly</h3>
       <iframe width="560" height="315" 
-        src="https://youtu.be/embed/8gQqQnnaKagEDZ9O" 
+        src="https://www.youtube.com/embed/pN4U_s9AXzE" 
         title="Small-scale digester construction" 
         frameborder="0" allowfullscreen></iframe>
     </div>
@@ -108,7 +128,7 @@
 
   <!-- Resources -->
   <section id="resources">
-    <h2>Guides & Resources</h2>
+    <h2><i class="fa-solid fa-book"></i> Guides & Resources</h2>
     <p>Download free guides, manuals, and research:</p>
     <ul>
       <li><a href="docs/Project_Report.pdf" target="_blank">Full Project Report (PDF)</a></li>
@@ -120,62 +140,9 @@
 
   <!-- FAQs -->
   <section id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <p><strong>Q:</strong> Is biogas safe?<br><strong>A:</strong> Yes, when digesters are sealed and gas is handled properly.</p>
-    <p><strong>Q:</strong> How much gas can I get?<br><strong>A:</strong> From research, the best ratio (1:3 CD:KW) gave ~34 L/kg of feedstock.</p>
-    <p><strong>Q:</strong> What can I use the gas for?<br><strong>A:</strong> Cooking, heating, and small-scale electricity generation.</p>
-  </section>
-
-  <!-- Calculator -->
-  <section id="calculator">
-    <h2>Biogas Yield Calculator</h2>
-    <p>Estimate gas output based on your feedstock.<br>
-       <small><em>Note: Based on small-scale results; actual outputs may vary.</em></small></p>
-
-    <label for="kgInput">Enter feedstock weight (kg): </label>
-    <input type="number" id="kgInput" placeholder="e.g. 10">
-
-    <label for="ratioSelect">Choose CD:KW ratio:</label>
-    <select id="ratioSelect">
-      <option value="23.25">1:1 (23.25 L/kg)</option>
-      <option value="19.66">2:1 (19.66 L/kg)</option>
-      <option value="31.31">1:2 (31.31 L/kg)</option>
-      <option value="34.09">1:3 (34.09 L/kg)</option>
-    </select>
-
-    <button onclick="calculateBiogas()">Calculate</button>
-
-    <div id="result" style="margin-top:15px; font-weight:bold;"></div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@biogasghana.org">info@biogasghana.org</a></p>
-    <p>WhatsApp: +233-20-9126-955</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Biogas Ghana | Clean Energy for All</p>
-  </footer>
-
-  <!-- Calculator Script -->
-  <script>
-  function calculateBiogas() {
-    let kg = document.getElementById("kgInput").value;
-    let yieldRate = document.getElementById("ratioSelect").value;
-    
-    if(kg <= 0) {
-      document.getElementById("result").innerHTML = "⚠️ Please enter a valid weight in kg.";
-      return;
-    }
-
-    let totalGas = (kg * yieldRate).toFixed(2);
-    document.getElementById("result").innerHTML = 
-      "✅ Estimated Gas Output: " + totalGas + " Litres";
-  }
-  </script>
-</body>
-</html>
-
+    <h2><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions</h2>
+    <div class="card">
+      <p><strong>Q:</strong> Is biogas safe?<br><strong>A:</strong> Yes, when digesters are sealed and gas is handled properly.</p>
+    </div>
+    <div class="card">
+      <p><strong>Q:</strong> How much gas can I get?<br><strong>A:</strong> From resea
