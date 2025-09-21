@@ -1,1 +1,1 @@
-# eco-friendly-energy-solutions
+# eco-friendly-solutions
